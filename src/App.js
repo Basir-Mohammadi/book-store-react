@@ -1,6 +1,6 @@
 // import './App.css';
 import {
-  BrowserRouter as Router, Switch, Route
+  BrowserRouter as Router, Switch, Route,
 } from 'react-router-dom';
 import Navbar from './component/Navbar';
 import Books from './component/books';
@@ -10,22 +10,22 @@ import Form from './component/form';
 function App() {
   return (
     <Router>
-      <div >
-      <Navbar />
-      <div className="content">
-        <Switch>
-          <Route exact path="/">
-            <Books />
-          </Route>
-          <Route path="/category">
-            <Category />
-          </Route>
-          <Route path="/form">
-            <Form />
-          </Route>
-        </Switch>
+      <div>
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              <Books />
+            </Route>
+            <Route path="/category">
+              <Category />
+            </Route>
+            <Route path="/form">
+              <Form />
+            </Route>
+          </Switch>
+        </div>
       </div>
-    </div>
     </Router>
 
   );
