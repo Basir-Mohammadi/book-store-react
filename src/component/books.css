@@ -1,0 +1,102 @@
+.nav-content {
+    background-color: white;
+    list-style: none;
+    margin-top: 2vh;
+    display: flex;
+    padding-left: 10%;
+    height: 6vh;
+  }
+  
+  .nav-content li {
+    color: #1f7199;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Tahoma', sans-serif;
+    margin-right: 15px;
+  }
+  
+  .main-area ul li {
+    border-right: 2px solid #1f7199;
+    padding-right: 10px;
+    margin-top: 12px;
+  }
+  
+  .nav-content li:nth-child(2) {
+    color: black;
+    font-size: 18px;
+    font-family: 'Tahoma', sans-serif;
+    font-weight: 500;
+  }
+  
+  .nav-content li:nth-child(3) {
+    color: #1f7199;
+    font-size: 16px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    margin-top: 4px;
+  }
+  
+  .card {
+    background: white;
+    height: 20vh;
+    margin: 24px;
+    padding: 12px;
+    display: flex;
+    border: 1px solid black;
+  }
+  
+  .main-area {
+    list-style: none;
+    width: 50%;
+    margin: 12px;
+  }
+  
+  .main-area span {
+    font-size: 12px;
+  }
+  
+  .main-area h1 {
+    font-size: 36px;
+  }
+  
+  .main-area p {
+    font-size: 18px;
+    color: #1f7199;
+  }
+  
+  .main-area ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .main-area ul li:nth-child(3) {
+    border-right: none;
+  }
+  
+  .main-area2 {
+    width: 25%;
+    border-right: 3px solid black;
+  }
+  
+  .main-area2 h4 {
+    font-size: 36px;
+  }
+  
+  .main-area3 {
+    float: right;
+    width: 25%;
+  }
+
+  .main-area3 button {
+    background-color: rgb(80, 80, 231);
+    color: white;
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 3px;
+  }
+  
+  .forms {
+    margin: 24px;
+  }

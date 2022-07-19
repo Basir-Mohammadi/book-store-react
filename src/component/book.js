@@ -1,3 +1,5 @@
+import './books.css';
+
 const Book = () => (
   <>
     <div className="card">
@@ -6,9 +8,9 @@ const Book = () => (
         <h1>The hunger games</h1>
         <p>Unseen Content</p>
         <ul>
-          <li>Corn</li>
-          <li>Corn</li>
-          <li>Corn</li>
+          <li>Comments</li>
+          <li>Remove</li>
+          <li>Edit</li>
         </ul>
       </div>
 

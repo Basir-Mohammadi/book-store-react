@@ -1,3 +1,5 @@
+import './books.css';
+
 const Form = () => (
   <form className="forms">
     <input type="text" name="author" placeholder="Author" />

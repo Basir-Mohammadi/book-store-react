@@ -1,10 +1,12 @@
+import './books.css';
+
 const Navbar = () => (
-  <nav className="navbar">
-    <h1> BookStore CMS </h1>
-    <div className="links">
-      <a href="/">Books</a>
-      <a href="/Category">Categories</a>
-    </div>
+  <nav className="">
+    <ul className="nav-content">
+      <li> BookStore CMS </li>
+      <li><a href="/">Books</a></li>
+      <li><a href="/Category">Categories</a></li>
+    </ul>
   </nav>
 );
 
