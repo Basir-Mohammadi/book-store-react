@@ -1,7 +1,7 @@
 const CHECK_STATUS = 'book-store-react/categories/CHECK_STATUS';
 
 // Reducer
-export const categoriesReducer = (state = [], action) => {
+const categoriesReducer = (state = [], action) => {
   switch (action.type) {
     case CHECK_STATUS:
       return action.text;
@@ -19,3 +19,5 @@ export const CheckStatus = () => {
   };
   return status;
 };
+
+export default categoriesReducer;

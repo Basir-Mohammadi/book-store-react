@@ -1,7 +1,7 @@
 const ADD_BOOK = 'book-store-react/books/ADD_BOOK';
 const REMOVE_BOOK = 'book-store-react/books/REMOVE_BOOK';
 // Reducer
-export const booksReducer = (state = [], action) => {
+const booksReducer = (state = [], action) => {
   switch (action.type) {
     case ADD_BOOK:
       return [
@@ -39,3 +39,5 @@ export const removeBook = (bookId) => {
   };
   return removedBook;
 };
+
+export default booksReducer;
