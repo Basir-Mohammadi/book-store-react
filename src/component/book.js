@@ -1,19 +1,30 @@
+import { useSelector, useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 import './books.css';
 
-const Book = () => (
-  <>
-    <div className="card">
+const Book = () => {
+  const books = useSelector((state) => state.booksReducer);
+  const dispatch = useDispatch();
+  return (books.map((book) => (
+    <div key={book.id} className="card">
       <div className="main-area">
         <span>Action</span>
-        <h1>The hunger games</h1>
-        <p>Unseen Content</p>
+        <h1>{book.title}</h1>
+        <p>{book.author}</p>
         <ul>
-          <li>Comments</li>
-          <li>Remove</li>
-          <li>Edit</li>
+          <button type="button">Comments</button>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              dispatch(removeBook(book.id));
+            }}
+          >
+            Remove
+          </button>
+          <button type="button">Edit</button>
         </ul>
       </div>
-
       <div className="main-area2">
         <h4>60%</h4>
       </div>
@@ -23,7 +34,7 @@ const Book = () => (
         <button type="button">UPDATE CHAPTER</button>
       </div>
     </div>
-  </>
-);
+  )));
+};
 
 export default Book;
