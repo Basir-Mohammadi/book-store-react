@@ -23,7 +23,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-[Books Live](https://basirking.github.io/Awesome-Book/)
+[Books Live]
 
 ## Author
 
@@ -51,8 +51,5 @@ Give a ⭐️ to if you like this project!
 - Inspiration
 - etc
 
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
 
 
