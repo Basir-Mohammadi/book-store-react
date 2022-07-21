@@ -1,5 +1,6 @@
 const ADD_BOOK = 'book-store-react/books/ADD_BOOK';
 const REMOVE_BOOK = 'book-store-react/books/REMOVE_BOOK';
+
 // Reducer
 const booksReducer = (state = [], action) => {
   switch (action.type) {
