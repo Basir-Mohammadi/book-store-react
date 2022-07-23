@@ -1,5 +1,4 @@
 .nav-content {
-  
   list-style: none;
   margin-top: 2vh;
   display: flex;
@@ -30,7 +29,7 @@
 }
 
 .profile i {
-  color:  #0290ff;
+  color: #0290ff;
 }
 
 .main-area ul li {
@@ -124,9 +123,6 @@
   margin: 0.313rem 6.25rem 0;
   padding: 1rem 9.188rem 1.625rem 1.688rem;
   display: inline-block;
-}
-
-.forms {
   width: 100%;
 }
 
@@ -205,5 +201,3 @@ select:hover {
   height: 1.813rem;
   margin: 0.188rem 20.188rem 0 0;
 }
-
-
