@@ -48,7 +48,7 @@ const Form = () => {
         <option value="Science">Science</option>
         <option value="Technology">Technology</option>
       </select>
-      <button type="submit">Add New</button>
+      <button className="btn" type="submit">Add New</button>
     </form>
   );
 };

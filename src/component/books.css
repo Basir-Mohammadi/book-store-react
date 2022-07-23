@@ -1,10 +1,17 @@
 .nav-content {
-  background-color: white;
+  
   list-style: none;
   margin-top: 2vh;
   display: flex;
   padding-left: 10%;
   height: 6vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
 }
 
 .nav-content li {
@@ -13,6 +20,17 @@
   font-weight: 700;
   font-family: 'Tahoma', sans-serif;
   margin-right: 15px;
+}
+
+.profile {
+  padding: 11px;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+  margin: 5px 5px;
+}
+
+.profile i {
+  color:  #0290ff;
 }
 
 .main-area ul li {
@@ -40,9 +58,10 @@
   background: white;
   height: 20vh;
   margin: 24px;
-  padding: 12px;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
   display: flex;
-  border: 1px solid black;
 }
 
 .main-area {
@@ -97,6 +116,94 @@
   margin-top: 3px;
 }
 
-.forms {
-  margin: 24px;
+.progressbar {
+  width: 40%;
 }
+
+.forms {
+  margin: 0.313rem 6.25rem 0;
+  padding: 1rem 9.188rem 1.625rem 1.688rem;
+  display: inline-block;
+}
+
+.forms {
+  width: 100%;
+}
+
+form input,
+select {
+  margin: 1.188rem 1.125rem 0 0;
+  padding: 0.813rem 5rem 0.813rem 1.063rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+form input:hover,
+select:hover {
+  outline: 0.5px solid #0290ff;
+  border: none;
+}
+
+.btn {
+  width: 11.5rem;
+  height: 2.813rem;
+  margin: 1.188rem 0 0 2.125rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.tranparent-btn {
+  color: #0290ff;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.chapter-section {
+  margin-left: 24px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chapter {
+  color: #e8e8e8;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.sub-chapter {
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.title {
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+}
+
+.category {
+  color: #121212;
+  font-size: 0.875rem;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+}
+
+.author {
+  font-size: 0.875rem;
+  color: #4386bf;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+}
+
+
