@@ -8,7 +8,7 @@ const Book = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchBooks());
-  }, []);
+  }, [books]);
   return (books.map((book) => (
     <div key={book.id} className="card">
       <div className="main-area">
