@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import Progressbar from 'react-js-progressbar';
 import { removeBook, fetchBooks } from '../redux/books/books';
 import './books.css';
 
@@ -13,12 +14,13 @@ const Book = () => {
     <div key={book.id} className="card">
       <div className="main-area">
         <span>Action</span>
-        <p>{book.category}</p>
-        <h4>{book.title}</h4>
-        <h6>{book.author}</h6>
-        <ul>
-          <button type="button">Comments</button>
+        <p className="category">{book.category}</p>
+        <h4 className="title">{book.title}</h4>
+        <h6 className="author">{book.author}</h6>
+        <ul className="all-btn">
+          <button className="tranparent-btn border-right" type="button">Comments</button>
           <button
+            className="tranparent-btn border-right"
             type="button"
             id={book.id}
             value="Remove"
@@ -30,16 +32,26 @@ const Book = () => {
           >
             Remove
           </button>
-          <button type="button">Edit</button>
+          <button className="tranparent-btn" type="button">Edit</button>
         </ul>
       </div>
       <div className="main-area2">
-        <h4>60%</h4>
+        <div className="progressbar">
+          <Progressbar
+            input={60}
+            pathWidth={5}
+            pathColor="#0290ff"
+            trailWidth={5}
+            trailColor="#e4e4e4"
+            textStyle={{ fill: '#0290ff' }}
+          />
+        </div>
+        <div className="completed">Completed</div>
       </div>
-      <div className="main-area3">
-        <h4>Current Chapter</h4>
-        <h5>Chapter 16</h5>
-        <button type="button">UPDATE CHAPTER</button>
+      <div className="main-area3 chapter-section ">
+        <h4 className="sub-chapter">CURRENT CHAPTER</h4>
+        <h5 className="chapter">CHAPTER 16</h5>
+        <button className="btn" type="button">UPDATE CHAPTER</button>
       </div>
     </div>
   )));
