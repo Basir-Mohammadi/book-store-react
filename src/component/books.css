@@ -96,7 +96,7 @@
 
 .main-area2 {
   width: 25%;
-  border-right: 3px solid black;
+  border-right: 1px solid #e8e8e8;
 }
 
 .main-area2 h4 {
@@ -173,14 +173,16 @@ select:hover {
 }
 
 .chapter {
-  letter-spacing: -0.2px;
+  letter-spacing: -0.4px;
   color: #121212;
+  padding-right: 4.2rem;
 }
 
 .sub-chapter {
   color: #e8e8e8;
   font-size: 1.2rem;
   font-weight: 300;
+  padding-left: 2.2rem;
 }
 
 .title {
