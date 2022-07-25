@@ -38,6 +38,7 @@ const Form = () => {
 
   return (
     <form className="forms" onSubmit={handleSubmit}>
+      <h1>Add New Book</h1>
       <input value={state.author} type="text" name="author" onChange={handleChanges} placeholder="Author" required />
       <input value={state.title} type="text" name="title" onChange={handleChanges} placeholder="Book" required />
       <select value={state.category} name="category" onChange={handleChanges}>
