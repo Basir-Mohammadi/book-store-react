@@ -17,10 +17,10 @@ const Book = () => {
         <p className="category">{book.category}</p>
         <h4 className="title">{book.title}</h4>
         <h6 className="author">{book.author}</h6>
-        <ul>
-          <button className="tranparent-btn" type="button">Comments</button>
+        <ul className="all-btn">
+          <button className="tranparent-btn border-right" type="button">Comments</button>
           <button
-            className="tranparent-btn"
+            className="tranparent-btn border-right"
             type="button"
             id={book.id}
             value="Remove"
@@ -46,11 +46,11 @@ const Book = () => {
             textStyle={{ fill: '#0290ff' }}
           />
         </div>
-
+        <div className="completed">Completed</div>
       </div>
       <div className="main-area3 chapter-section ">
-        <h4 className="sub-chapter">Current Chapter</h4>
-        <h5 className="chapter">Chapter 16</h5>
+        <h4 className="sub-chapter">CURRENT CHAPTER</h4>
+        <h5 className="chapter">CHAPTER 16</h5>
         <button className="btn" type="button">UPDATE CHAPTER</button>
       </div>
     </div>
