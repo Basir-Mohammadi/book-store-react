@@ -1,23 +1,31 @@
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { removeBook, fetchBooks } from '../redux/books/books';
 import './books.css';
 
 const Book = () => {
-  const books = useSelector((state) => state.booksReducer);
+  const books = useSelector((state) => state.bookStore);
   const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, [books]);
   return (books.map((book) => (
     <div key={book.id} className="card">
       <div className="main-area">
         <span>Action</span>
-        <h1>{book.title}</h1>
-        <p>{book.author}</p>
+        <p>{book.category}</p>
+        <h4>{book.title}</h4>
+        <h6>{book.author}</h6>
         <ul>
           <button type="button">Comments</button>
           <button
             type="button"
+            id={book.id}
+            value="Remove"
             onClick={(e) => {
               e.preventDefault();
-              dispatch(removeBook(book.id));
+              dispatch(removeBook(e.target.id));
+              dispatch(fetchBooks());
             }}
           >
             Remove
