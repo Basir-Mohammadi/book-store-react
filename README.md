@@ -23,7 +23,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-[Books Live]
+[Books Live](https://book2store-react.herokuapp.com/)
 
 ## Author
 
